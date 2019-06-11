@@ -23,7 +23,7 @@ name = "mlaction"
 # Dev branch marker is: "X.Y.dev" or "X.Y.devN" where N is an integer.
 # "X.Y.dev0" is the canonical version of "X.Y.dev"
 #
-__version__ = "0.0.4"
+__version__ = "0.0.5"
 
 try:
     # 此变量是由生成过程在 _builtins_ 中注入的。它用于在未生成二进制文件时启用 mlaction 子包的导入
