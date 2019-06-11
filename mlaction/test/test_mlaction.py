@@ -1,5 +1,5 @@
 import mlaction
 
 
-def test_slmethod_name():
+def test_mlaction_name():
     assert mlaction.name == "mlaction"
