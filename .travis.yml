@@ -1,21 +1,18 @@
-dist: xenial # required for Python >= 3.7
+dist: xenial
 language: python
 python:
-  - "3.5"
-  - "3.6"
-  - "3.7"
+    - '3.5'
+    - '3.6'
+    - '3.7'
 install:
-  - pip install -r requirements.txt
+    - 'pip install -r requirements.txt'
 script:
-  - pytest mlaction
+    - 'pytest mlaction'
 deploy:
-  provider: pypi
-  user: iosdevlog
-  on:
-    python: 3.7
-    tags: true
-    branch: master
-  skip_cleanup: true
-  distributions: "sdist bdist_wheel"
-  password:
-    secure: a9WT+Zu8f+WZtbyOri7tFmjzrQkp4swK0D+A1NC50hbd9fSVFIsYBUQ7Iq+A3vi2OXfBDxhf/tqU52ScvVsLCzz/jWaCH0rPqxj6igUvt0M73Zk8T4SG63n7UEEzAGXzPOwkOVOuCLuGdBFcAfWeoMzFwzdl/CiX9wvA/K2WWgnNjLD7weTSvkLSXAMLmnWCQKSFIzh6rxFRUV6z28Bxx4aHJaMXP9zMTf7xx5V7Yv2ckzouMFf8yHjk/dd+NhXbosww+IyEFr2A82qipmbQHneN6eSifYY5XTPaZzO1HTLH+0p43tMpjtNgWrFvn5vjgRhsm1n+j+bM975MnmPY8JNUVmmjIHsljAiLxRwlUQ6uhyy+LSuCpdPQLhD/ba2B7wBx6s9mKA1yI9VUx3aJ01jhD3cs4xMrGhnw0rwQEEMoOcUIwLvszVPF4U5dkQKK1jqPHcr1hvtJxSIqgZaREeYxT8LzvU87yyJer6JQtzilky3Kot7eRKN97kIfutFBWPV0V3ldsSgGzvClUJdj1s2F1s6Id06ubQD3PEnScoPqVJl0vveVTA8XpcJkOYp1WYTomYgI65UHXggJ/v0BtiW5hZxc8I0vtWPvAL4KT9NKuafJLp5TPaZcAmBZfAlNAr6QeRAwDa5oxyZf4rbIanYjwZ6Z7tkao2KbtxrPcmo=
+    provider: pypi
+    user: iosdevlog
+    'true': {python: 3.7, tags: true, branch: master}
+    skip_cleanup: true
+    distributions: 'sdist bdist_wheel'
+    password: {secure: QDojsiek5bQUhzi6G9k1jiVgwAo0KCD5jtKEyodYjwr3BzxGwtN/5ifGo145JagSY8lCX3JS0jkLLKQb64EW/vTLyQKkl1NqfWYdYZ1RQ26yYvfsy4s2ukDYYN5uTFLuMiqNOJmKxcGHOYxU5FEVwBiMw3D4x9MAdg+f9J8rvX7T5CiHCXIFD/NfyeiJTACB+7frJkf7L2dGocRfGedr9OcxA9SrXzAlRfFRA6V2NnBOG1uDA65ouuqhBCnAsfyx6Uw5SPws1ljprMySylMxZ85MGgEK0mq6ol6g958mvMPXmxmrHDtrdWVBuB5zTu3v6QoQay8akP3GL9QKiw36ykVlZ/jUw+hQhInBKT01lfD7ViJXW7RZRk+LJSLqwAiOv7WpP6RLyux6Rof5+rnaVh62wiyY4Jo+hPGeqT9v9L7TaLAAVgc5u7a61v1vMOsBFK1PrYNk16FmfRj3zFd1MlBDfztHlmlWMDIC4I9Jc6QxVI+wEntM+cjFUwymXR2OnjMRFvNfWLmrTwwQSjVR1hRPv4EllUojxM7cjBrOgp3L6zjVt6UfhWY0kyQ5d4eyV4mMQaL8rbcfbKVBbb1A94THzrxsAd21heGof4RCkIrAd0pRMNlAkYU/ZSYfRiyxISh8d7YlMa2ZN7OJ1VC+yCTetwtUi8T5Go3hZsFPFUY=}
+
