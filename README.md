@@ -20,7 +20,7 @@ GitHub: <https://github.com/iOSDevLog/mlaction>
 ## PyPI 境像加速
 
 ```python
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple mlaction
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple mlaction
 ```
 
 ## 代码规范
